@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UR(URBAN REVIVO)</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <script src="js/swiper.js"></script>
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #fff;
+            font-family: Helvetica Neue, Helvetica, Arial,
+            sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            width: 80%;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div id="head">
+        <!-- logo -->
+        <div class="head-logo">
+            <img src="images/logo.png" class="logo">
+        </div>
+        <div class="head-menu">
+            <li>
+                <a href="#">
+                    <i class="iconfont icon-xingtaiduICON_sousuo--
+                    "></i>
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">店铺</a>
+            </li>
+            <li>
+                <a href="#">登录</a>
+            </li>
+            <li>
+                <a href="#">注册</a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="iconfont icon-gouwudai"></i>
+                    <span>购物袋</span>
+                </a>
+            </li>
+        </div>
+        <div class="leftlist" style="font-size: 14px">
+            <li>
+                <a href="#">新年新衣</a>
+            </li>
+            <li>
+                <a href="#">迪士尼系列</a>
+            </li>
+            <li>
+                <a href="#">潮流专辑</a>
+            </li>
+            <li>
+                <a href="#">每周新品</a>
+            </li>
+            <li>
+                <a href="#">女士</a>
+            </li>
+            <li>
+                <a href="#">青春</a>
+            </li>
+            <li>
+                <a href="#">男士</a>
+            </li>
+            <li>
+                <a href="#">春季新品</a>
+            </li>
+            <li>
+                <a href="#">鞋包/配饰</a>
+            </li>
+            <li>
+                <a href="#">外套/西装</a>
+            </li>
+            <li>
+                <a href="#">毛针织</a>
+            </li>
+            <li>
+                <a href="#">T恤/卫衣</a>
+            </li>
+        </div>
+        <img src="images/huadong.png" class="slideimg">
+        <a href="#">
+            <img src="images/01.jpg" class="banner">
+        </a>
+    </div>
+
+    <!-- 商品1 -->
+    <div id="product1">
+        <a href="#">
+            <img src="images/02.jpg" class="photo1">
+        </a>
+    </div>
+    <!-- 商品2 -->
+    <div id="product2">
+        <div class="product2-maintitle">KICK&nbsp;&nbsp;YOUR&nbsp;&nbsp;STYLE</div>
+        <div class="product2-fonttitle">新季魅力</div>
+        <div class="closet">
+            <div class="prod">
+                <a href="#">
+                    <img src="images/03.jpg" alt="">
+                </a>
+            </div>
+            <div class="prod">
+                <a href="#">
+                    <img src="images/04.jpg" alt="">
+                </a>
+            </div>
+            <div class="prod">
+                <a href="#">
+                    <img src="images/05.jpg" alt="">
+                </a>
+            </div>
+            <div class="prod">
+                <a href="#">
+                    <img src="images/06.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 商品3 -->
+    <div id="product3">
+        <div class="product3-maintitle">MAGAZINE</div>
+        <div class="product3-fonttitle">品味时尚</div>
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/07.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/08.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/09.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/10.jpg" alt="">
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!-- 场景展示 -->
+    <div id="product3">
+        <div class="product3-maintitle">CAMPAIGN</div>
+        <div class="product3-fonttitle">发现风格</div>
+        <div class="product3-show">
+            <video id="product3-video" onclick="videoPlay(this)" poster="https://gw-img.ur.com.cn//urmall/66b58ddb-5af1-4f35-a008-e0e2318e0866.jpg"
+                src="video/0192a3f6-0e37-45a0-b5e7-acebaffda5c2.mp4" class="video" controls="controls" width="100%;"></video>
+        </div>
+    </div>
+    <!-- 店铺详情 -->
+    <div id="product4">
+        <div class="product4-maintitle">STORE&nbsp;&nbsp;LOCATION</div>
+        <div class="product4-fonttitle">店铺详情</div>
+        <div class="wrap">
+            <ul>
+                <li class="show">
+                    <img src="images/11.jpg" alt="">
+                </li>
+                <li>
+                    <img src="images/12.jpg" alt="">
+                </li>
+            </ul>
+            <img src="images/l.png" id="prev" alt="">
+            <img src="images/r.png" id="next" alt="">
+            <ol id="dotWrap">
+            </ol>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div id="foot">
+        <!-- 联系 -->
+        <div class="linkbox">
+            <div class="box1">
+                <li>
+                    <i class="iconfont icon-weixin"></i>
+                    <span class="chat">
+                        在线聊天
+                    </span>
+                </li>
+                <li>
+                    <i class="iconfont icon-dianhua"></i>
+                    <span class="phone">
+                        电话
+                    </span>
+                </li>
+                <li>
+                    <i class="iconfont icon-dianziyouxiang
+                    "></i>
+                    <span class="email">
+                        电子邮件
+                    </span>
+                </li>
+
+
+            </div>
+            <li class="copyright">©2016 URBAN REVIVO ALL RIGHTS RESERVED
+                <a href="http://beian.miit.gov.cn" target="_blank" style="color: #444">粤ICP备13081728号</a>
+            </li>
+            <div style="width:300px; padding:0 0 10px;">
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44011102002716" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+                    <img src="images/beian.png" style="float:left;width: 20px" />
+                    <p class="beian1link1">
+                        粤公网安备 44011102002716号</p>
+                </a>
+            </div>
+            <div class="beian1">
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44011102002717" class="beian1link">
+                    <img src="images/beian.png" style="float:left;width: 20px" />
+                    <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">
+                        粤公网安备 44011102002717
+                    </p>
+                </a>
+            </div>
+        </div>
+        <div class="linkbox">
+            <i class="iconfont icon-weizhi"></i>
+            <h5>门店位置</h5>
+            <p>
+                <li>寻找距离您最近的URBAN REVIVO门店</li>
+            </p>
+            <br/>
+            <p>
+                <i class="icon-png icon-dingyue"></i>
+                <span>订阅</span>
+            </p>
+            <p>
+                <font>即刻订阅！获取最新的产品、活动及折扣信息。</font>
+            </p>
+            <br/>
+            <p>
+                <input name=emailsubscribe placeholder="再次输入您的电子邮件" class="layui-input" />
+            </p>
+            <p>
+                <a class="layui-input" style="text-align: center;line-height: 38px;border: 1px solid #444;width: 100%;display: inline-block;">订阅</a>
+            </p>
+            <script type="text/javascript">
+                function emailsubscribe() {
+                    if ($("input[name='emailsubscribe']").val() && isEmail($("input[name='emailsubscribe']").val())) {
+                        postX({
+                            url: "/subscribe",
+                            data: { email: $("input[name='emailsubscribe']").val(), interest: "" },
+                            success: function (res) {
+                                tip(res.msg);
+                            }
+                        }, null);
+                    } else {
+                        tip('邮箱错误，请输入正确的邮箱！');
+                    }
+
+                }
+
+                // 验证邮箱
+                function isEmail(EmailStr) {
+                    return /[\w!#$%&'*+/=?^_`{|}~-]+(?:\.[\w!#$%&'*+/=?^_`{|}~-]+)*@(?:[\w](?:[\w-]*[\w])?\.)+[\w](?:[\w-]*[\w])?/.test(EmailStr);
+                }
+            </script>
+        </div>
+        <div class="linkbox">
+            <div class="box3">
+                <h4>常见问题</h4>
+                <h5>商品</h5>
+                <h5>配送</h5>
+                <h5>购物流程</h5>
+                <h5>退换货</h5>
+                <h5>购物条款</h5>
+                <h5>隐私条款</h5>
+            </div>
+            <div class="box3">
+                <h4>权益政策</h4>
+                <h5>会员规则</h5>
+                <h5>会员积分Q&A</h5>
+                <h5>会员储值卡章程</h5>
+                <h5>会员储值卡用户协议</h5>
+                <h5>礼品卡章程</h5>
+                <h5>礼品卡Q&A</h5>
+            </div>
+            <div class="box3">
+                <h4>公司信息</h4>
+                <h5>关于品牌</h5>
+                <h5>客服</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="mask"></div>
+    <div class="popup">
+        <div title="关闭" class="close-icon">
+            <i class="iconfont icon-gb"></i>
+        </div>
+        <h1>联系我们</h1>
+        <div class="text">
+            <span style="font-family: FavoritStd-BoldExtended;">UR</span>致力让大众轻松拥有高品质的时尚产品，我们非常重视您的宝贵意见及反馈，如您有任何关于UR商品、店铺或其他方面的疑问，请随时与我们联系！
+        </div>
+        <div class="text">
+            <font style="font-family: NeueMontreal-Regular;"></font>周一至周日
+            <font style="font-family: NeueMontreal-Regular;padding-left:10px;">9:00-18:00</font>
+        </div>
+        <div class="help-row">
+            <div class="help_item">
+                <div class="iconM">
+                    <i class="iconfont icon-dianhua"></i>
+                </div>
+                <div class="text">电话</div>
+                <div class="text-b">4006-513-512</div>
+            </div>
+            <div class="help_item">
+                <div class="iconM">
+                    <i class="iconfont icon-dianziyouxiang"></i>
+                </div>
+                <div class="text">邮箱</div>
+                <div class="text-b">customerservice@ur.com.cn</div>
+            </div>
+            <a href="https://qiyukf.com/client?k=6da118fccc636b5cffd204339f90a87e&u=&d=mcmi6rqxptyetzstzixu&uuid=hcals6jsft850hah92g9&gid=0&sid=0&qtype=0&welcomeTemplateId=0&dvctimer=0&robotShuntSwitch=0&hc=0&robotId=0&pageId=1611572677018z02BKzpwaW&shuntId=0&ctm=LS0xNjExNTcyNjg0NzAy&templateId=4232173&t=UR%25EF%25BC%2588URBAN%2520REVIVO%25EF%25BC%2589%25E5%25AE%2598%25E6%2596%25B9%25E5%2595%2586%25E5%259F%258E-%25E6%2584%259F%25E5%25AE%2598%25E4%25BA%25AB%25E6%2582%25A6%2520%25E7%258E%25A9%25E5%2591%25B3%25E6%2597%25B6%25E5%25B0%259A"
+                target="_blank">
+                <div class="help_item" style="cursor: pointer;margin-right: 0px;">
+                    <div class="iconM">
+                        <i class="iconfont icon-liaotian"></i>
+                    </div>
+                    <div class="text">聊天</div>
+
+                    <div class="text-b">在线客服</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+    var dotWrap = document.getElementById("dotWrap");
+    var liList = document.querySelectorAll(".wrap ul li");
+    var next = document.getElementById("next");
+    var prev = document.getElementById("prev");
+    var wrap = document.querySelector(".wrap");
+    // 初始化小圆点
+    for (var i = 0; i < liList.length; i++) {
+        var newDot = document.createElement("li");
+        dotWrap.appendChild(newDot);
+        if (!i) {
+            newDot.className = "focus"
+        }
+        newDot.setAttribute("data-index", i)
+        newDot.onclick = function () {
+            n = Number(this.getAttribute("data-index"))
+            changeImg()
+        }
+    }
+    var dotList = document.querySelectorAll("#dotWrap li");
+    var n = 0;	// 代表当前在第几张
+    function changeImg() {
+        // 1.1隐藏所有li
+        for (var i = 0; i < liList.length; i++) {
+            liList[i].className = "";
+            // 2.1.先把所有小圆点的class去掉
+            dotList[i].className = "";
+        }
+        // 1.2显示第n个li
+        liList[n].className = "show";
+        // 2.2给第n个小圆点添加focus的class
+        dotList[n].className = "focus";
+    }
+    next.onclick = function () {
+        // 正常情况：n不等于5 要去下一张
+        // 特殊情况：n等于5 要去第0张
+        if (n !== liList.length - 1) {
+            n++;
+        }
+        else {
+            n = 0
+        }
+        changeImg()
+    }
+    prev.onclick = function () {
+        // 当n等于0时，特殊情况，要去最后一张
+        if (n === 0) {
+            n = liList.length - 1;
+        }
+        else {
+            n--
+        }
+        changeImg()
+    }
+    // 自动播放
+    var autoPlay = setInterval(function () {
+        next.click()
+    }, 3000)
+    wrap.onmouseenter = function () {
+        clearInterval(autoPlay);
+    }
+    wrap.onmouseleave = function () {
+        autoPlay = setInterval(function () {
+            next.click()
+        }, 3000)
+    }
+</script>
+<script src="js/jquery.min.js"></script>
+<script src="js/index.js"></script>

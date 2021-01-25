@@ -1,0 +1,376 @@
+*{margin:0;padding: 0;}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#head{
+    /* background: #333; */
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.head-logo{
+    width: 95%;
+    position: absolute;
+    margin: auto;
+    padding: 60px 40px 0;
+}
+.logo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 30px;
+}
+.head-menu{
+    position: absolute;
+    top: 75px;
+    right: 40px;
+}
+.head-menu li{
+    float: left;
+    font-size: 14px;
+    color: #fff;
+    margin-left: 20px;
+}
+.head-menu li a{
+    color: #fff;
+}
+.leftlist{
+    position: absolute;
+    left: 40px;
+    top: 75px;
+    height: 300px;
+    width: 180px;
+    font-size: 14px;
+    color: #444;
+}
+.leftlist>li{
+    padding: 4px 8px;
+}
+.leftlist>li a{
+    color: #444;
+    font-size:14px;
+}
+.slideimg{
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+}
+#product1{
+    margin-top: 100px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.photo1{
+    width: 100%;
+}
+#product2{
+    margin-top: 100px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.product2-maintitle,.product2-fonttitle{
+    font-family: "FavoritStd-BoldExtended";
+    color: #000;
+    font-size: 28px;
+    text-align: center;
+    line-height: 0.8;
+    font-weight: bold;
+}
+.product2-fonttitle{
+    color: #000;
+    font-size: 22px;
+    letter-spacing: 0;
+    margin-bottom: 80px;
+    line-height: 1;
+    margin-top: 10px;
+}
+.prod img{
+    float: left;
+    width: 48%;
+    margin: 1%;
+    transition: 0.8s;
+}
+.prod img:hover{
+    transform: scale(1.02);
+}
+.swiper-slide-text {
+    margin-left: 15%;
+    z-index: 15;
+    text-align: left;
+}
+.swiper-slide-text .tt1 {
+    color: #000;
+    margin-bottom: 10px;
+    font-family: "NeueMontreal-Regular";
+    font-size: 14px;
+    display: block;
+    line-height: 1;
+    letter-spacing: 0.5px;
+}
+.swiper-slide-text .tt2 {
+    color: #000;
+    margin-bottom: 40px;
+    font-family: "NeueMontreal-Medium";
+    font-size: 24px;
+    display: block;
+    line-height: 1.2;
+}
+#product3{
+    margin-top: 100px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.product3-maintitle,.product3-fonttitle{
+    font-family: "FavoritStd-BoldExtended";
+    color: #000;
+    font-size: 28px;
+    text-align: center;
+    line-height: 0.8;
+    font-weight: bold;
+}
+.product3-fonttitle{
+    color: #000;
+    font-size: 22px;
+    letter-spacing: 0;
+    margin-bottom: 80px;
+    line-height: 1;
+    margin-top: 10px;
+}
+.product3-show{
+    width: 95%;
+    margin: auto;
+}
+#product4{
+    margin-top: 100px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.product4-maintitle,.product4-fonttitle{
+    font-family: "FavoritStd-BoldExtended";
+    color: #000;
+    font-size: 28px;
+    text-align: center;
+    line-height: 0.8;
+    font-weight: bold;
+}
+.product4-fonttitle{
+    color: #000;
+    font-size: 22px;
+    letter-spacing: 0;
+    margin-bottom: 80px;
+    line-height: 1;
+    margin-top: 10px;
+}
+.wrap{
+    width:95%;
+    margin: auto;
+    position: relative;
+    min-width: 50%;
+}
+.wrap ul li{
+    display:none;
+}
+.wrap ul li img{
+    width: 100%;
+}
+.wrap .show{
+    display: block;
+}
+#next,#prev{
+    position:absolute;
+    cursor:pointer;
+    top:45%;
+    opacity:.7;
+    transition: all .5s;
+}
+#next:hover,#prev:hover{
+    transform:scale(1.1);
+    opacity:1;
+}
+#next{
+    right:15px;
+}
+#prev{
+    left:15px;
+}
+#dotWrap{
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    transform:translate(-50%,0);
+}
+#dotWrap li{
+    background-color:#fff;
+    width: 14px;
+    height:14px;
+    border-radius:50%;
+    cursor:pointer;
+    float:left;
+    margin-right:10px;
+}
+#dotWrap .focus{
+    background-color:aquamarine;
+}
+#foot{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 50px;
+    border-top: 2px solid #eee;
+    font-size: 18px;
+}
+#foot i{
+    font-size: 22px;
+    /* margin-right: 10px; */
+}
+.copyright{
+    margin-top: 70px;
+    font-size: 12px;
+}
+.linkbox{
+    float: left;
+    margin: 30px 72px;
+    font-size: 14px;
+}
+.box1{
+    color: #444;
+    font-size: 18px;
+}
+.box1 li{
+    margin-bottom: 10px;
+}
+.box1 li:nth-of-type(4){
+    margin-bottom: 20px;
+}
+.box1 li span a{
+    color: #444;
+}
+.beian1{
+    width:300px;
+    padding:0 0 10px;
+    font-size: 12px;
+}
+.layui-input{
+    width: 100%;
+    line-height: 38px;
+    margin-bottom: 10px;
+}
+.beian1link{
+    display:inline-block;text-decoration:none;height:20px;line-height:20px;
+}
+.beian1link1{
+    float:left;
+    height:20px;line-height:20px;
+    margin: 0px 0px 0px 5px; color:#939393;
+    font-size: 14px;
+}
+.box3{
+    width: 100px;
+    height: 178px;
+    margin: 20px;
+    float: left;
+}
+.box3 h4,h5{
+    margin-bottom: 10px;
+}
+.box3 h4{
+    color: #444;
+}
+.box3 h5{
+    color: #6c757d;
+    font-weight: normal;
+}
+.chat,.email,.phone{
+    cursor: pointer;
+}
+/* 遮罩层 */
+.mask,.popup{
+    display:none;
+}
+.mask{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .7);  
+}
+.popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.help_item {
+    display: inline-block;
+    margin-right: 20px;
+    background-color: #f0eff5;
+    width: 210px;
+    text-align: center;
+    padding: 94px 0;
+}
+.icon-gb{
+    position: absolute;
+    right: 20px;
+}
+.popup h1{
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #444;
+    display: block;
+    text-align: center;
+}
+.text {
+    font-weight: normal;
+    font-size: 14px;
+    color: #8e8e93;
+    display: block;
+    text-align: center;
+    line-height: 24px;
+}
+.text-b {
+    font-family: NeueMontreal-Regular;
+    font-size: 14px;
+    color: #444;
+    display: block;
+}
+.help-row {
+    margin: 40px auto;
+    display: block;
+    text-align: center;
+}
+.icon-dianziyouxiang {
+    width: 36px;
+    height: 36px;
+    text-align: center;
+}
+.icon-dianhua {
+    width: 36px;
+    height: 36px;
+    text-align: center
+}
+.icon-liaotian {
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    color: #444
+}
+

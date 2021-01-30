@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/favicon.ico">
+    <title>UR在线客服</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        body {
+            background-image: url(img/8013.jpg);
+            background-size: cover;
+        }
+
+        #bigbox {
+            width: 500px;
+            height: 600px;
+            margin: 50px auto;
+            display: flex;
+            flex-direction: column;
+            background-color: #f3f3f3;
+        }
+
+        #top {
+            height: 60px;
+            background: rgba(0, 0, 0, 0.9);
+        }
+
+        #top .h {
+            margin-left: 10px;
+            color: #fff;
+            line-height: 60px;
+        }
+
+        #content {
+            flex: 1;
+            overflow: auto;
+        }
+
+        #content ul {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .left {
+            display: flex;
+            align-items: center;
+            margin: 5px;
+        }
+
+        .right {
+            width: 100%;
+            /* display: none; */
+            /* align-self:center; */
+            float: right;
+        }
+
+        .right img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            float: right;
+        }
+
+        .right span {
+            float: right;
+            margin-right: 10px;
+            width: 280px;
+            font-size: 18px;
+            background:#fff;
+            border-radius: 10px;
+            line-height: 30px;
+            text-indent: 8px;
+            padding: 6px;
+        }
+
+        #content img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .lan {
+            display: inline-block;
+            width: 280px;
+            font-size: 18px;
+            background: #fff;
+            margin-left: 10px;
+            border-radius: 10px;
+            line-height: 30px;
+            text-indent: 8px;
+            padding: 6px;
+        }
+
+        #bottom {
+            height: 54px;
+            background: #000;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .talk {
+            display: inline-block;
+            height: 40px;
+            line-height: 26px;
+            width: 70%;
+            background: #fffefe;
+            margin: 7px;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            border-radius: 10px;
+        }
+
+        .send {
+            color: #fff;
+            font-size: 16px;
+            width: 50px;
+            height: 32px;
+            margin: 11px;
+            background-color: #090a0c;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bigbox">
+        <!-- 上边 -->
+        <div id="top">
+            <span class="title">
+                <h2 class="h">UR</h2>
+            </span>
+        </div>
+        <div id="content">
+            <ul class="idea">
+                <li class="left">
+                    <img src="images/13.png" alt="">
+                    <span class="lan">亲爱哒~很开心来到UR，我是您的贴心小棉袄UU同学~~</span>
+                </li>
+            </ul>
+        </div>
+
+        <div id="bottom">
+            <input class="talk">
+            <button class="send">发送</button>
+        </div>
+    </div>
+    <script>
+        let talk = document.querySelector(".talk");
+        let send = document.querySelector(".send");
+        let left = document.querySelector(".left");
+        let content = document.querySelector("#content");
+        // var rightw = document.querySelector(".right .lan");
+        let con = document.querySelector(".idea");
+
+        send.onclick = function () {
+            if (talk.value === "") {
+                alert("请输入文本!")
+            }
+            else {
+                var right = left.cloneNode(true)
+                right.className = "right";
+                var rightimg = right.querySelector(".right img");
+                console.log(rightimg)
+                var rightword = right.querySelector(".right .lan");
+                rightimg.src = "images/14.png";
+                rightword.innerHTML = talk.value; con.appendChild(right);
+                talk.value = "";
+            }
+            let http = new XMLHttpRequest();
+            http.open("get", "http://192.168.43.248/eshop/chat.php?message=" + rightword.innerHTML);
+            http.send();
+            http.onreadystatechange = function () {
+                if (http.readyState === 4) {
+                    let leftword = left.cloneNode(true);
+                    con.appendChild(leftword);
+                    // console.log(http.responseText);
+                    let newleft = leftword.querySelector(".left .lan");
+                    newleft.innerHTML = http.responseText.split(",")[1].split(":")[1].replace(/[\"\{\}]/g, "")
+                    content.scrollTop = content.scrollHeight;
+                }
+            }
+        }
+        talk.onkeyup = function (event) {
+            if (event.keyCode === 13) {
+                send.click();
+            }
+        }
+    </script>
+</body>
+
+</html>

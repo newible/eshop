@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UR品牌故事+</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/goods.css">
+    <style>
+        .main img {
+            width: 100%;
+            vertical-align: middle;
+            border-style: none;
+            text-align: center;
+        }
+        #head {
+            /* background: #333; */
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .head-logo {
+            width: 95%;
+            position: absolute;
+            margin: auto;
+            padding: 60px 40px 0;
+        }
+
+        .logo {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 30px;
+        }
+
+        .head-logo:hover {
+            cursor: pointer;
+        }
+        .leftlist {
+            background-color: #444;
+        }
+
+        .leftlist li a {
+            width: 100%;
+            display: inline-block;
+            text-align: center;
+            color: #e3e3e3 !important;
+        }
+        .head-logo:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div id="head">
+        <!-- logo -->
+        <div class="head-logo">
+            <img src="images/logob.png" class="logo">
+        </div>
+        <div class="head-menu">
+            <li class="search">
+                <i class="iconfont icon-xingtaiduICON_sousuo--
+                "></i>
+                <span>搜索</span>
+            </li>
+            <li>
+                <a href="http://192.168.43.248/eshop/goods-list1.html">店铺</a>
+            </li>
+            <li class="head-help">
+                帮助
+            </li>
+            <li class="user-login">
+                <a href="http://192.168.43.248/eshop/login.html">登录</a>
+            </li>
+            <li>
+                <a href="http://192.168.43.248/eshop/register.html">注册</a>
+            </li>
+            <li>
+                <a href="http://192.168.43.248/eshop/cart.html">
+                    <i class="iconfont icon-gouwudai"></i>
+                    <span>购物袋</span>
+                </a>
+            </li>
+        </div>
+        <div class="leftimg">
+            <img src="images/list.png" alt="">
+        </div>
+    </div>
+    <!-- 产品介绍 -->
+    <div class="main">
+        <img>
+        <img>
+        <img>
+        <img>
+    </div>
+    <!-- 底部 -->
+    <div id="foot">
+        <!-- 联系 -->
+        <div class="linkbox">
+            <div class="box1">
+                <li>
+                    <i class="iconfont icon-weixin"></i>
+                    <span class="chat">
+                        在线聊天
+                    </span>
+                </li>
+                <li>
+                    <i class="iconfont icon-dianhua"></i>
+                    <span class="phone">
+                        电话
+                    </span>
+                </li>
+                <li>
+                    <i class="iconfont icon-dianziyouxiang
+                    "></i>
+                    <span class="email">
+                        电子邮件
+                    </span>
+                </li>
+            </div>
+            <li class="copyright">©2016 URBAN REVIVO ALL RIGHTS RESERVED
+                <a href="http://beian.miit.gov.cn" target="_blank" style="color: #444">粤ICP备13081728号</a>
+            </li>
+            <div style="width:300px; padding:0 0 10px;">
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44011102002716" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+                    <img src="images/beian.png" style="float:left;width: 20px" />
+                    <p class="beian1link1">
+                        粤公网安备 44011102002716号</p>
+                </a>
+            </div>
+            <div class="beian1">
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44011102002717" class="beian1link">
+                    <img src="images/beian.png" style="float:left;width: 20px" />
+                    <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">
+                        粤公网安备 44011102002717
+                    </p>
+                </a>
+            </div>
+        </div>
+        <div class="linkbox">
+            <i class="iconfont icon-weizhi"></i>
+            <h5>门店位置</h5>
+            <p>
+                <li>寻找距离您最近的URBAN REVIVO门店</li>
+            </p>
+            <br/>
+            <p>
+                <i class="icon-png icon-dingyue"></i>
+                <span>订阅</span>
+            </p>
+            <p>
+                <font>即刻订阅！获取最新的产品、活动及折扣信息。</font>
+            </p>
+            <br/>
+            <p>
+                <input name=emailsubscribe placeholder="再次输入您的电子邮件" class="layui-input" />
+            </p>
+            <p>
+                <a class="layui-input" style="text-align: center;line-height: 38px;border: 1px solid #444;width: 100%;display: inline-block;">订阅</a>
+            </p>
+            <script type="text/javascript">
+                function emailsubscribe() {
+                    if ($("input[name='emailsubscribe']").val() && isEmail($("input[name='emailsubscribe']").val())) {
+                        postX({
+                            url: "/subscribe",
+                            data: { email: $("input[name='emailsubscribe']").val(), interest: "" },
+                            success: function (res) {
+                                tip(res.msg);
+                            }
+                        }, null);
+                    } else {
+                        tip('邮箱错误，请输入正确的邮箱！');
+                    }
+
+                }
+
+                // 验证邮箱
+                function isEmail(EmailStr) {
+                    return /[\w!#$%&'*+/=?^_`{|}~-]+(?:\.[\w!#$%&'*+/=?^_`{|}~-]+)*@(?:[\w](?:[\w-]*[\w])?\.)+[\w](?:[\w-]*[\w])?/.test(EmailStr);
+                }
+            </script>
+        </div>
+        <div class="linkbox">
+            <div class="box3">
+                <h4>常见问题</h4>
+                <h5>商品</h5>
+                <h5>配送</h5>
+                <h5>购物流程</h5>
+                <h5>退换货</h5>
+                <h5>购物条款</h5>
+                <h5>隐私条款</h5>
+            </div>
+            <div class="box3">
+                <h4>权益政策</h4>
+                <h5>会员规则</h5>
+                <h5>会员积分Q&A</h5>
+                <h5>会员储值卡章程</h5>
+                <h5>会员储值卡用户协议</h5>
+                <h5>礼品卡章程</h5>
+                <h5>礼品卡Q&A</h5>
+            </div>
+            <div class="box3">
+                <h4>公司信息</h4>
+                <h5>关于品牌</h5>
+                <h5>客服</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="mask"></div>
+    <div class="popup">
+        <div title="关闭" class="close-icon">
+            <i class="iconfont icon-gb"></i>
+        </div>
+        <h1>联系我们</h1>
+        <div class="text">
+            <span style="font-family: FavoritStd-BoldExtended;">UR</span>致力让大众轻松拥有高品质的时尚产品，我们非常重视您的宝贵意见及反馈，如您有任何关于UR商品、店铺或其他方面的疑问，请随时与我们联系！
+        </div>
+        <div class="text">
+            <font style="font-family: NeueMontreal-Regular;"></font>周一至周日
+            <font style="font-family: NeueMontreal-Regular;padding-left:10px;">9:00-18:00</font>
+        </div>
+        <div class="help-row">
+            <div class="help_item">
+                <div class="iconM">
+                    <i class="iconfont icon-dianhua"></i>
+                </div>
+                <div class="text">电话</div>
+                <div class="text-b">4006-513-512</div>
+            </div>
+            <div class="help_item">
+                <div class="iconM">
+                    <i class="iconfont icon-dianziyouxiang"></i>
+                </div>
+                <div class="text">邮箱</div>
+                <div class="text-b">customerservice@ur.com.cn</div>
+            </div>
+            <a href="http://192.168.43.248/eshop/onlineChat.html" target="_blank">
+                <div class="help_item" style="cursor: pointer;margin-right: 0px;">
+                    <div class="iconM">
+                        <i class="iconfont icon-liaotian"></i>
+                    </div>
+                    <div class="text">聊天</div>
+                    <div class="text-b">在线客服</div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="search-mask"></div>
+    <div class="search-popup">
+        <div title="关闭" class="s-close-icon">
+            <i class="iconfont icon-gb search-close"></i>
+        </div>
+        <div class="search-con">
+            <input class="searchinput" autofocus="autofocus" name="keytext" type="text" value="" placeholder="搜索您感兴趣的产品">
+            <i class="iconfont icon-xingtaiduICON_sousuo--" title="搜索" style="color:rgb(255,255,255)"></i>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="js/jquery.min.js"></script>
+<script src="js/brandinfo.js"></script>
+<!-- <script src="js/index.js"></script> -->
+<script>
+    $(".head-logo").click(function(){
+        window.location.href = "http://192.168.43.248/eshop/index.html";
+    })
+</script>

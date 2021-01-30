@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UR商品</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/goods.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <style>
+        .dress-col1 {
+            display: none;
+        }
+
+        .head-logo:hover {
+            cursor: pointer;
+        }
+
+        .td_1,
+        .td_2,
+        .td_3,
+        .td_4,
+        .td_5,
+        .td_6,
+        .td_7 {
+            border-bottom: solid 1px #e3e3e3;
+            border-top: solid 1px #e3e3e3;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .td_1,
+        .td_3,
+        .td_4,
+        .td_5,
+        .td_6,
+        .td_7 {
+            border-right: solid 1px #FFF;
+        }
+
+        .td_3 {
+            text-align: left;
+        }
+
+        .td_4 {
+
+            font-weight: bold;
+        }
+
+        .td_7 {
+            font-weight: bold;
+            color: #fe6400;
+            font-size: 14px;
+        }
+
+        .td_2 img {
+            width: 92px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div id="head">
+        <!-- logo -->
+        <div id="head-con">
+            <div class="head-logo">
+                <img src="images/logob.png" class="logob">
+            </div>
+            <div class="head-menu">
+                <li class="search">
+                    <i class="iconfont icon-xingtaiduICON_sousuo--"></i>
+                    <span>搜索</span>
+                </li>
+                <li>
+                    <a href="#">店铺</a>
+                </li>
+                <li class="head-help">
+                    帮助
+                </li>
+                <li>
+                    <a href="http://192.168.43.248/eshop/login.html">登录</a>
+                </li>
+                <li>
+                    <a href="#">注册</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-gouwudai"></i>
+                        <span>购物袋</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+        <ul class="home-menu">
+            <li>您的位置：</li>
+            <li>
+                <a href="/index.html">首页</a> &gt;</li>
+            <li>购物袋</li>
+        </ul>
+    </div>
+    <!-- 购物车 -->
+    <div class="main">
+        <form action="" method="post" name="myform">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" id="shopping">
+                <tr>
+                    <td class="title_1">
+                        <input id="allCheckBok" type="checkbox" value="">全选</td>
+                    <td class="title_2" colspan="2">宝贝</td>
+                    <td class="title_4">单价（元）</td>
+                    <td class="title_5">数量</td>
+                    <td class="title_6">小计（元）</td>
+                    <td class="title_7">操作</td>
+                </tr>
+
+                <tr>
+                    <td colspan="8" class="line"></td>
+                </tr>
+                <tr id="product1">
+                    <td class="td_1">
+                        <input type="checkbox" name="cartCheckBox" value="product1">
+                    </td>
+                    <td class="td_2">
+                        <img src="https://gw-img.ur.com.cn//urmall/uploadImportTmp/2631ee42-50fd-4bb3-b1ec-f48b19d9be06/WH05S1KX2000_N1/0.jpg" alt="shopping"> </td>
+                    <td class="td_3">
+                        <a href="#">时尚羽绒服</a>
+                        <br /> 商品编号：
+                        <br /> WH05S1KX2000
+                    </td>
+                    <td class="td_4">699</td>
+                    <td class="td_5">
+                        <span class="minus">-</span>
+                        <input type="text" id="num_1" value="1" class="num_input" readonly="readonly">
+                        <span class="plus">+</span>
+                    </td>
+                    <td class="td_6"></td>
+                    <td class="td_7">
+                        <a href="#">X</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="5" class="shopend">商品总价（不含运费）：
+                        <label id="total" class="yellow">699.00</label>元
+                        <br /> 总计
+                        <label class="yellow" id="integral">1</label>件
+                        <br />
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <div class="register-form-con">
+            <a href="http://192.168.43.248/eshop/goods-list2.html" class="button-line fl">继&nbsp;续&nbsp;购&nbsp;买</a>
+            <a href="#" class="button fr buybtn">结&nbsp;&nbsp;&nbsp;&nbsp;算</a>
+        </div>
+        <!--     
+        <div class="promition">
+        </div>
+        <div class="con-cart ">
+            
+            <div class="m-row">
+                <div class="register">
+                    <h1>购物袋</h1>
+                </div>
+                <ul class="cart-title" style="text-align: left;">
+                    <li class="order-col1" style="text-align: inherit;padding-left: 0px;">
+                        <div style="width: 15%;display: inline-block;text-align: center;">
+                            <a href="" data-item-size="2" class="cartitem-radio-all">
+                                <input id="allCheckBok" type="checkbox" value="">全选</a>
+                        </div>
+                    </li>
+                    <li class="order-col9" style="text-align: center;">尺码</li>
+                    <li class="order-col9" style="text-align: center;">数量</li>
+                    <li class="order-col9" style="text-align: center;">单价</li>
+                    <li class="order-col4 t-r" style="text-align: center;">小计</li>
+                    <li class="order-col4 t-r" style="text-align: center;">删除</li>
+                </ul>
+                // 标题结束 
+                <div class="order-con-row">
+                    <div class="crat-col">
+                        <div class="cart-cil1">
+                            &nbsp;
+                            <a href="javascript:;">
+                                <input name="cartcheckbox" type="checkbox" value="">
+                            </a>
+                            </a>
+                        </div>
+                        <div class="cart-img">
+                                <img style="cursor: pointer;" src="https://gw-img.ur.com.cn//urmall/uploadImportTmp/962cafa3-4ffc-43e7-9437-8b4e5afac19b/WG05S1GE2000_K0/0.jpg"
+                                    onerror="this.src='/images/default-img.png;this.onerror=null'">
+                            </a>
+                        </div>
+                        <div class="cart-cil3">
+                            <h4>
+                                <a href="/product/detail/ff808081771f484001771fefd1fc2e91.html">
+                                    <b>宽松大衣外套</b>
+                                </a>
+                            </h4>
+                            <span>商品编号：WG05S1GE2000</span>
+                        </div>
+                    </div>
+                    <div class="order-col9" style="margin-top:50px;">
+                        M(170/88A)
+                    </div>
+                    <div class="order-col9" style="margin-top:50px;">
+                        <a href="javascript:;" data-sku="ff808081771f484001771fefd1fb2e8e" data-val="-1" class="b-none pro_quntity_minus">-</a>
+                        <a href="javascript:;" class="pro_quntity b-l">1</a>
+                        <a href="javascript:;" data-sku="ff808081771f484001771fefd1fb2e8e" data-val="1" class="b-none pro_quntity_plus" data-max="3">+</a>
+                    </div>
+                    <div class="order-col9" style="margin-top:50px;">
+                        <p class="d_price" data-price="599">599</p>
+                    </div>
+                    //小计 
+                    <div class="order-col9" style="margin-top:50px;">
+                        <p class="t_price">599</p>
+                    </div>
+                    <div class="order-col4 t-r" style="margin-top:50px;">
+                        <p class="t-r">
+                            <a href="javascript:;" data-sku-id="ff808081771f484001771fefd1fb2e8e" class="remove-item">X</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-six">
+            
+            <div>
+                <span style="display:inline-block;width:300px;">商品总数：</span>
+                <span id="quntityid" style="display:inline-block;width:75px;">0</span>
+                <span style="display:inline-block;width:25px;">件</span>
+            </div>
+
+            <div>
+                <span style="display:inline-block;width:300px;">总金额：</span>
+                <span style="font-weight:bold;display:inline-block;width:100px;">¥
+                    <font id="sumid">0.00</font>
+                </span>
+            </div>
+        </div>
+        <div class="register-form-con">
+            <a href="/product/search/page" class="button-line fl">继&nbsp;续&nbsp;购&nbsp;买</a>
+            <a href="javascript:;" class="button fr buybtn">结&nbsp;&nbsp;&nbsp;&nbsp;算</a>
+        </div>
+    </div>
+    </div> -->
+
+        <!-- 底部 -->
+        <div id="foot">
+            <!-- 联系 -->
+            <div class="linkbox">
+                <div class="box1">
+                    <li>
+                        <i class="iconfont icon-weixin"></i>
+                        <span class="chat">
+                            在线聊天
+                        </span>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-dianhua"></i>
+                        <span class="phone">
+                            电话
+                        </span>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-dianziyouxiang
+                    "></i>
+                        <span class="email">
+                            电子邮件
+                        </span>
+                    </li>
+                </div>
+                <li class="copyright">©2016 URBAN REVIVO ALL RIGHTS RESERVED
+                    <a href="http://beian.miit.gov.cn" target="_blank" style="color: #444">粤ICP备13081728号</a>
+                </li>
+                <div style="width:300px; padding:0 0 10px;">
+                    <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44011102002716" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+                        <img src="images/beian.png" style="float:left;width: 20px" />
+                        <p class="beian1link1">
+                            粤公网安备 44011102002716号</p>
+                    </a>
+                </div>
+                <div class="beian1">
+                    <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44011102002717" class="beian1link">
+                        <img src="images/beian.png" style="float:left;width: 20px" />
+                        <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">
+                            粤公网安备 44011102002717
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="linkbox">
+                <i class="iconfont icon-weizhi"></i>
+                <h5>门店位置</h5>
+                <p>
+                    <li>寻找距离您最近的URBAN REVIVO门店</li>
+                </p>
+                <br/>
+                <p>
+                    <i class="icon-png icon-dingyue"></i>
+                    <span>订阅</span>
+                </p>
+                <p>
+                    <font>即刻订阅！获取最新的产品、活动及折扣信息。</font>
+                </p>
+                <br/>
+                <p>
+                    <input name=emailsubscribe placeholder="再次输入您的电子邮件" class="layui-input" />
+                </p>
+                <p>
+                    <a class="layui-input" style="text-align: center;line-height: 38px;border: 1px solid #444;width: 100%;display: inline-block;">订阅</a>
+                </p>
+                <script type="text/javascript">
+                    function emailsubscribe() {
+                        if ($("input[name='emailsubscribe']").val() && isEmail($("input[name='emailsubscribe']").val())) {
+                            postX({
+                                url: "/subscribe",
+                                data: { email: $("input[name='emailsubscribe']").val(), interest: "" },
+                                success: function (res) {
+                                    tip(res.msg);
+                                }
+                            }, null);
+                        } else {
+                            tip('邮箱错误，请输入正确的邮箱！');
+                        }
+
+                    }
+
+                    // 验证邮箱
+                    function isEmail(EmailStr) {
+                        return /[\w!#$%&'*+/=?^_`{|}~-]+(?:\.[\w!#$%&'*+/=?^_`{|}~-]+)*@(?:[\w](?:[\w-]*[\w])?\.)+[\w](?:[\w-]*[\w])?/.test(EmailStr);
+                    }
+                </script>
+            </div>
+            <div class="linkbox">
+                <div class="box3">
+                    <h4>常见问题</h4>
+                    <h5>商品</h5>
+                    <h5>配送</h5>
+                    <h5>购物流程</h5>
+                    <h5>退换货</h5>
+                    <h5>购物条款</h5>
+                    <h5>隐私条款</h5>
+                </div>
+                <div class="box3">
+                    <h4>权益政策</h4>
+                    <h5>会员规则</h5>
+                    <h5>会员积分Q&A</h5>
+                    <h5>会员储值卡章程</h5>
+                    <h5>会员储值卡用户协议</h5>
+                    <h5>礼品卡章程</h5>
+                    <h5>礼品卡Q&A</h5>
+                </div>
+                <div class="box3">
+                    <h4>公司信息</h4>
+                    <h5>关于品牌</h5>
+                    <h5>客服</h5>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
+<script src="js/jquery.min.js"></script>
+<script src="js/cart.js"></script>
+<script>
+    $(".head-logo").click(function () {
+        window.location.href = "http://192.168.43.248/eshop/index.html";
+    })
+</script>

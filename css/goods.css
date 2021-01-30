@@ -4,26 +4,47 @@ li{
 }
 a{
     text-decoration: none;
+    color: #444;
 }
 #head{
     /* background: #333; */
     width: 100%;
+    height: 200px;
     overflow: hidden;
-    position: relative;
 }
+
 .head-logo{
     width: 95%;
-    position: absolute;
+    position: relative;
     margin: auto;
     padding: 60px 40px 0;
 }
-.logo{
+.logob{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     height: 30px;
 }
-
+.leftimg{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 100px;
+    left: 40px;
+}
+.leftlist{
+    position: absolute;
+    top: 150px;
+    left: 40px;
+    height: 300px;
+    width: 180px;
+    font-size: 14px;
+    color: #444;
+    display: none;
+}
+.leftlist>li{
+    padding: 4px 0;
+}
 .head-menu{
     position: absolute;
     top: 75px;
@@ -32,7 +53,6 @@ a{
 .head-menu li{
     float: left;
     font-size: 14px;
-    color: #fff;
     margin-left: 20px;
 }
 .head-menu li:hover{
@@ -88,201 +108,58 @@ a{
     font-family: NeueMontreal-Regular;
     padding-bottom: 10px;
 }
-.head-menu li a{
-    color: #fff;
+/* 主体 */
+.prosuctbox {
+    margin: 0 8%;
+    padding: 50px 0;
+    text-align: left;
+    width: 86%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
 }
-.leftlist{
-    position: absolute;
-    left: 40px;
-    top: 75px;
-    height: 300px;
-    width: 180px;
+#dress-col1 {
+    padding: 0 5px;
+    margin-bottom: 100px;
+    text-align: center;
+    display: inline-block;
+    width: 31.8%;
+}
+.dress-col-img {
+    display: inline-block;
+    width: 100%;
+    height: 86%;
+    margin: 0 38px 10px 0;
+    text-align: center;
+    padding: 0;
+}
+.dress-col-img a {
+    display: block;
+    border: 2px solid #fff;
+}
+.dress-col-img img {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: 272px;
+    height: 372px;
+    /* margin-right: 62px; */
+}
+.dress-text {
+    width: 100%;
+    height: 42px;
     font-size: 14px;
-    color: #444;
-}
-.leftlist>li{
-    padding: 4px 8px;
-}
-.leftlist>li a{
-    color: #444;
-    font-size:14px;
-}
-.slideimg{
-    position: absolute;
-    top: 150px;
-    left: 50%;
-    transform: translateX(-50%);
+    color: #474747;
+    line-height: 20px;
+    display: block;
+    text-align: center;
+    margin: 4px auto 0 auto;
+    overflow: hidden;
 }
 
-.banner{
-    width: 100%;
-    height: 100%;
-}
-#product1{
-    margin-top: 100px;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-.photo1{
-    width: 100%;
-}
-#product2{
-    margin-top: 100px;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-.product2-maintitle,.product2-fonttitle{
-    font-family: "FavoritStd-BoldExtended";
-    color: #000;
-    font-size: 28px;
-    text-align: center;
-    line-height: 0.8;
-    font-weight: bold;
-}
-.product2-fonttitle{
-    color: #000;
-    font-size: 22px;
-    letter-spacing: 0;
-    margin-bottom: 80px;
-    line-height: 1;
-    margin-top: 10px;
-}
-.prod img{
-    float: left;
-    width: 48%;
-    margin: 1%;
-    transition: 0.8s;
-}
-.prod img:hover{
-    transform: scale(1.02);
-}
-.swiper-slide-text {
-    margin-left: 15%;
-    z-index: 15;
-    text-align: left;
-}
-.swiper-slide-text .tt1 {
-    color: #000;
-    margin-bottom: 10px;
-    font-family: "NeueMontreal-Regular";
-    font-size: 14px;
-    display: block;
-    line-height: 1;
-    letter-spacing: 0.5px;
-}
-.swiper-slide-text .tt2 {
-    color: #000;
-    margin-bottom: 40px;
-    font-family: "NeueMontreal-Medium";
-    font-size: 24px;
-    display: block;
-    line-height: 1.2;
-}
-#product3{
-    margin-top: 100px;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-.product3-maintitle,.product3-fonttitle{
-    font-family: "FavoritStd-BoldExtended";
-    color: #000;
-    font-size: 28px;
-    text-align: center;
-    line-height: 0.8;
-    font-weight: bold;
-}
-.product3-fonttitle{
-    color: #000;
-    font-size: 22px;
-    letter-spacing: 0;
-    margin-bottom: 80px;
-    line-height: 1;
-    margin-top: 10px;
-}
-.product3-show{
-    width: 95%;
-    margin: auto;
-}
-#product4{
-    margin-top: 100px;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-.product4-maintitle,.product4-fonttitle{
-    font-family: "FavoritStd-BoldExtended";
-    color: #000;
-    font-size: 28px;
-    text-align: center;
-    line-height: 0.8;
-    font-weight: bold;
-}
-.product4-fonttitle{
-    color: #000;
-    font-size: 22px;
-    letter-spacing: 0;
-    margin-bottom: 80px;
-    line-height: 1;
-    margin-top: 10px;
-}
-.wrap{
-    width:95%;
-    margin: auto;
-    position: relative;
-    min-width: 50%;
-}
-.wrap ul li{
-    display:none;
-}
-.wrap ul li img{
-    width: 100%;
-}
-.wrap .show{
-    display: block;
-}
-#next,#prev{
-    position:absolute;
-    cursor:pointer;
-    top:45%;
-    opacity:.7;
-    transition: all .5s;
-}
-#next:hover,#prev:hover{
-    transform:scale(1.1);
-    opacity:1;
-}
-#next{
-    right:15px;
-}
-#prev{
-    left:15px;
-}
-#dotWrap{
-    position:absolute;
-    bottom:20px;
-    left:50%;
-    transform:translate(-50%,0);
-}
-#dotWrap li{
-    background-color:#fff;
-    width: 14px;
-    height:14px;
-    border-radius:50%;
-    cursor:pointer;
-    float:left;
-    margin-right:10px;
-}
-#dotWrap .focus{
-    background-color:aquamarine;
-}
 #foot{
     width: 100%;
     overflow: hidden;
-    position: relative;
-    margin-top: 50px;
     border-top: 2px solid #eee;
     font-size: 18px;
 }
@@ -296,7 +173,7 @@ a{
 }
 .linkbox{
     float: left;
-    margin: 30px 72px;
+    margin: 30px 70px;
     font-size: 14px;
 }
 .box1{

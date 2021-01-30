@@ -1,0 +1,139 @@
+.dress-row {
+    margin: 0 40px;
+    padding: 4px 0;
+    text-align: left;
+    width: 95.83333%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.left{
+    width: 82%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-right: -10px;
+}
+.detail-col {
+    width: 48.3333%;
+    display: inline-block;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.detail-col img {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+}
+
+/* 右边 */
+.right {
+    display: inline-block;
+    margin: 40px 0 0 0;
+    padding: 0;
+    text-align: left;
+    width: 18%;
+    max-width: 434px;
+    min-width: 230px;
+}
+.detail-list, .detail-listN {
+    display: block;
+    border-bottom: 1px solid #8f8f90;
+    position: relative;
+    margin: 0 auto 20px auto;
+    padding: 0 0 20px 0;
+    font-size: 14px;
+    color: #474747;
+}
+.detail-list h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.detail-list h4, .detail-list h5, .detail-listN h5 {
+    font-weight: 600;
+}
+.detail-list-Price {
+    display: block;
+    margin: 10px auto;
+}
+.c-gray,.c-material{
+    color: #8e8e93 !important;
+}
+.detail-list h5 {
+    margin-bottom: 10px;
+}
+.min-pic {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #fff;
+    width: 60px;
+    /* height: 89px; */
+    margin-right: 5px;
+    overflow: hidden;
+}
+.number {
+    display: block;
+    overflow: hidden;
+    width: 198px;
+    margin: 0 auto 20px;
+}
+.number .arrow, .number span {
+    width: 40px;
+    color: #474747;
+    font-size: 14px;
+    display: inline-block;
+    text-align: center;
+    padding: 8px 0;
+    border: 1px solid #e0e0e0;
+}
+.number .pro_quntity_minus{
+    border-right: none;
+}
+.number .pro_quntity_plus{
+    border-left: none;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+.color-active {
+    border: 1px solid #343434;
+}
+.detail-list a.button, .detail-list a.button-line {
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.button, .button-line {
+    background: #0047ba;
+    color: #fff !important;
+}
+.button, .button-line {
+    width: 150px;
+    text-align: center;
+    font-size: 20px;
+    display: inline-block;
+    padding: 7px 0;
+}
+.button-line {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    color: #6b6b6b !important;
+}
+.button, .button-line {
+    background: #0047ba;
+    color: #fff !important;
+}
+.size a{
+    display: block;
+    padding: 10px;
+}
+.size a:hover{
+    background-color: #f3f3f3
+}
+.popup{
+    height: 50px;
+    width: 100px;
+}

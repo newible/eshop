@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0
+}
+body{
+    background: #fff;
+}
+
+#loginbox {
+    width: 500px;
+    height: 100px;
+    margin: 50px auto; 
+} 
+
+p {
+    text-align: center;
+    line-height: 100px;
+    position: relative;
+}
+
+P::before {
+    content: "";
+    width: 20%;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    left: 5%;
+    top: 49%
+}
+
+P::after {
+    content: "";
+    width: 20%;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    right: 5%;
+    top: 49%
+}
+#box{
+    width: 422px;
+    margin: 10px auto;
+}
+.formgroup{
+    width: 422px;
+    margin: 26px auto;
+}
+#password,
+#username {
+    width: 100%;
+    outline: medium;
+    border: none;
+    border-bottom-color: currentcolor;
+    border-bottom-style: none;
+    border-bottom-width: medium;
+    border-bottom: 1px #000 solid;
+    line-height: 40px;
+    font-size: 14px;
+    color: #8e8e93;
+}
+#login{
+    margin-right: 20px;
+}
+::-webkit-input-placeholder{
+    text-indent: 20px;
+}
